@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>請求通知</title>
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+.container {
+  margin-top: 100px;
+}
+.box {
+  display: inline-block;
+  background: #222;
+  padding: 30px;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+h1 {
+  color: red;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="box">
+    <h1>ご請求のお知らせ</h1>
+    <p>未払い料金 <strong>999,999円</strong> が発生しています。</p>
+    <p>至急お支払いください。</p>
+    <button onclick="reveal()">支払う</button>
+    <p id="msg"></p>
+  </div>
+</div>
+
+<script>
+function reveal() {
+  document.getElementById("msg").innerHTML = "🎉 ドッキリでした！";
+}
+</script>
+</body>
+</html>
